@@ -1,0 +1,279 @@
+/* ==========================================================
+   RESPONSIVE STYLES
+   Mobile and tablet adjustments for the dark-themed portfolio.
+   Loaded AFTER style.css so these override when needed.
+   ========================================================== */
+
+
+/* ==========================================================
+   TABLET (≤ 968px)
+   ========================================================== */
+@media (max-width: 968px) {
+
+    /* --- HERO: stack vertically --- */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: var(--space-lg);
+        min-height: auto;
+        padding-top: var(--space-xl);
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tagline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        flex: 0 0 auto;
+    }
+
+    .image-ring {
+        width: 240px;
+        height: 240px;
+    }
+
+    /* --- Blobs smaller on tablet --- */
+    .blob-1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .blob-2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* --- Stats: 2 columns on tablet --- */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --- Less padding on sections --- */
+    section {
+        padding-top: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+}
+
+
+/* ==========================================================
+   MOBILE (≤ 640px)
+   ========================================================== */
+@media (max-width: 640px) {
+
+    /* --- NAVBAR: hamburger menu --- */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-primary);
+        flex-direction: column;
+        padding: var(--space-md);
+        gap: var(--space-sm);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(20px);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 1.05rem;
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    /* Show hamburger button */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Hamburger to X animation */
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-container {
+        position: relative;
+    }
+
+
+    /* --- HERO --- */
+    .image-ring {
+        width: 200px;
+        height: 200px;
+    }
+
+    .status-badge {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .hero-buttons .btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    /* --- STATS: single column on small mobile, 2 cols on slightly larger --- */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .stat-card {
+        padding: var(--space-sm);
+    }
+
+    .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .stat-label {
+        font-size: 0.78rem;
+    }
+
+
+    /* --- ABOUT --- */
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+
+    /* --- PROJECTS: single column --- */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+
+    /* --- SKILLS: single column --- */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+
+    /* --- CONTACT: stack buttons --- */
+    .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-xs);
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .contact-links a {
+        justify-content: center;
+    }
+
+
+    /* --- Reduce section padding on mobile --- */
+    section {
+        padding-top: var(--space-lg);
+        padding-bottom: var(--space-lg);
+    }
+
+    .section-title {
+        margin-bottom: var(--space-lg);
+    }
+
+
+    /* --- Smaller blobs on mobile --- */
+    .blob-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .blob-2 {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+/* ==========================================================
+   SMALL MOBILE (≤ 400px)
+   ========================================================== */
+@media (max-width: 400px) {
+
+    .nav-container {
+        padding: var(--space-sm);
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .image-ring {
+        width: 170px;
+        height: 170px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info {
+        padding: var(--space-sm);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* ==========================================================
+   ACCESSIBILITY: reduced motion
+   ========================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .blob,
+    .status-dot,
+    .typing-cursor {
+        animation: none !important;
+    }
+}

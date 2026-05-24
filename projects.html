@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by KALAVALA SHIVA HARI KOWSHIK">
+    <title>Projects | KALAVALA SHIVA HARI KOWSHIK</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-page="projects">
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">KALAVALA<span class="logo-accent"> SHIVA HARI KOWSHIK</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html" data-page="about">About</a></li>
+                    <li><a href="projects.html" data-page="projects">Projects</a></li>
+                    <li><a href="publications.html" data-page="publications">Publications</a></li>
+                    <li><a href="skills.html" data-page="skills">Skills</a></li>
+                    <li><a href="certificates.html" data-page="certificates">Certificates</a></li>
+                    <li><a href="contact.html" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="page-content">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <section class="page-header">
+            <h1 class="page-title">
+                <span class="reveal-text">Featured</span>
+                <span class="gradient-text reveal-text">Projects</span>
+            </h1>
+            <p class="page-subtitle">A selection of things I've built. Each one taught me something new.</p>
+        </section>
+
+        <section class="projects">
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="assets/images/projects/dr-1.png" alt="DR System - Dashboard">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/projects/dr-2.png" alt="DR System - Grad-CAM heatmap">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/projects/dr-3.png" alt="DR System - Evidence map">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/projects/dr-4.png" alt="DR System - Clinical report">
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-prev" aria-label="Previous image">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn carousel-next" aria-label="Next image">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active" data-slide="0" aria-label="Go to image 1"></button>
+                            <button class="carousel-dot" data-slide="1" aria-label="Go to image 2"></button>
+                            <button class="carousel-dot" data-slide="2" aria-label="Go to image 3"></button>
+                            <button class="carousel-dot" data-slide="3" aria-label="Go to image 4"></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DR Explainable AI System</h3>
+                        <p>An end-to-end AI platform that detects diabetic retinopathy from retinal fundus images using EfficientNet-B3, with 7 layers of visual explanation including Grad-CAM, lesion overlays, and saliency maps to make AI decisions interpretable for clinicians. Generates secure password-protected PDF reports with automated email delivery.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>EfficientNet-B3</span>
+                            <span>Grad-CAM</span>
+                            <span>FastAPI</span>
+                            <span>PyTorch</span>
+                            <span>Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kalavalashivaharikowshik/DR-Explainable-AI-System" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="assets/images/projects/mimic-1.png" alt="MIMIC - Input UI">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/projects/mimic-2.png" alt="MIMIC - SHAP graph">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/projects/mimic-3.png" alt="MIMIC - LIME explanation">
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-prev" aria-label="Previous">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button class="carousel-btn carousel-next" aria-label="Next">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active" data-slide="0" aria-label="Image 1"></button>
+                            <button class="carousel-dot" data-slide="1" aria-label="Image 2"></button>
+                            <button class="carousel-dot" data-slide="2" aria-label="Image 3"></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>MIMIC NLP Explainable AI</h3>
+                        <p>A multimodal deep learning system that predicts ICU patient mortality risk by fusing clinical text (BioBERT embeddings) with structured vitals/lab data. Features a novel multi-level explainability framework combining attention weights, SHAP global importance, and LIME local explanations to support clinical decision-making. Achieved 0.87 AUC on MIMIC dataset.</p>
+                        <div class="tech-stack">
+                            <span>PyTorch</span>
+                            <span>BioBERT</span>
+                            <span>SHAP</span>
+                            <span>LIME</span>
+                            <span>FastAPI</span>
+                            <span>Transformers</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kalavalashivaharikowshik/mimic-nlp-explainable-ai" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-carousel" data-carousel>
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="assets/images/projects/plant-1.png" alt="Plant Disease - Upload UI">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/images/projects/plant-2.png" alt="Plant Disease - Prediction">
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-prev" aria-label="Previous">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button class="carousel-btn carousel-next" aria-label="Next">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active" data-slide="0" aria-label="Image 1"></button>
+                            <button class="carousel-dot" data-slide="1" aria-label="Image 2"></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Plant Disease Detection (Triton + LLM)</h3>
+                        <p>A production-ready microservices platform that detects plant diseases across 30+ classes using EfficientNet-B0 served via NVIDIA Triton Inference Server for GPU-accelerated inference, with Llama3 (Ollama) generating natural-language explanations. Built with React + FastAPI + Redis caching, fully Dockerized for one-command deployment.</p>
+                        <div class="tech-stack">
+                            <span>Triton</span>
+                            <span>Docker</span>
+                            <span>FastAPI</span>
+                            <span>React</span>
+                            <span>Redis</span>
+                            <span>Ollama (Llama3)</span>
+                            <span>ONNX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kalavalashivaharikowshik/plant-disease-detection-triton" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; 2026 KALAVALA SHIVA HARI KOWSHIK. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

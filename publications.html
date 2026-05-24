@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research publications by KALAVALA SHIVA HARI KOWSHIK">
+    <title>Publications | KALAVALA SHIVA HARI KOWSHIK</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-page="publications">
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">KALAVALA<span class="logo-accent"> SHIVA HARI KOWSHIK</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html" data-page="about">About</a></li>
+                    <li><a href="projects.html" data-page="projects">Projects</a></li>
+                    <li><a href="publications.html" data-page="publications">Publications</a></li>
+                    <li><a href="skills.html" data-page="skills">Skills</a></li>
+                    <li><a href="certificates.html" data-page="certificates">Certificates</a></li>
+                    <li><a href="contact.html" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="page-content">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <section class="page-header">
+            <h1 class="page-title">
+                <span class="reveal-text">Research</span>
+                <span class="gradient-text reveal-text">Publications</span>
+            </h1>
+            <p class="page-subtitle">Peer-reviewed research contributions in AI, NLP, and applied machine learning.</p>
+        </section>
+
+
+        <section class="publications">
+            <div class="pub-list">
+
+                <!-- IEEE Paper: TamilNews Inspector -->
+                <article class="pub-card">
+                    <div class="pub-header">
+                        <span class="pub-type-badge">IEEE Conference Paper</span>
+                        <span class="pub-year">2025</span>
+                    </div>
+
+                    <h2 class="pub-title">
+                        TamilNews Inspector: A Multilingual Fake News Detection Framework Using Sentence Embeddings and Ensemble Learning
+                    </h2>
+
+                    <p class="pub-authors">
+                        S. Doss M, M. T. Deepak,
+                        <strong>K. S. Hari Kowshik</strong>,
+                        A. KB, S. S, P. S
+                    </p>
+
+                    <p class="pub-venue">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        2025 Innovations in Power and Advanced Computing Technologies (i-PACT) · Surabaya, Indonesia · pp. 1-6
+                    </p>
+
+                    <div class="pub-abstract">
+                        <p>
+                            A multilingual fake news detection framework targeting Tamil and English news, combining transformer-based semantic embeddings (distiluse-base-multilingual-cased-v1) with an XGBoost ensemble classifier. The system classifies news into six misinformation categories — Fake, Real, Satire, Clickbait, Partially True, and Unverified — trained on 10,000 Tamil &amp; English samples from 2023 to March 2025.
+                        </p>
+                        <p>
+                            Deployed as a Gradio web interface with real-time and batch inference, the framework achieves <strong>97.3% classification accuracy</strong>, outperforming traditional baselines (Logistic Regression, SVM, Random Forest, kNN) while remaining more computationally efficient than BERT-based approaches. Designed for low-resource multilingual settings with planned extensions to Explainable AI and other Indian languages.
+                        </p>
+                    </div>
+
+                    <div class="pub-tags">
+                        <span>Multilingual NLP</span>
+                        <span>Fake News Detection</span>
+                        <span>Sentence Embeddings</span>
+                        <span>XGBoost</span>
+                        <span>Ensemble Learning</span>
+                        <span>Transformers</span>
+                        <span>Gradio</span>
+                    </div>
+
+                    <div class="pub-meta">
+                        <span class="pub-doi">
+                            <strong>DOI:</strong> 10.1109/i-PACT65952.2025.11308027
+                        </span>
+                    </div>
+
+                    <div class="pub-actions">
+                        <a href="https://ieeexplore.ieee.org/document/11308027" target="_blank" class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            Read on IEEE Xplore
+                        </a>
+                        <button class="btn btn-secondary" id="citeBtn" data-citation='S. Doss M, M. T. Deepak, K. S. Hari Kowshik, A. KB, S. S and P. S, "Tamilnews Inspector: A Multilingual Fake News Detection Framework Using Sentence Embeddings and Ensemble Learning," 2025 Innovations in Power and Advanced Computing Technologies (i-PACT), Surabaya, Indonesia, 2025, pp. 1-6, doi: 10.1109/i-PACT65952.2025.11308027.'>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <span id="citeBtnText">Copy Citation</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; 2026 KALAVALA SHIVA HARI KOWSHIK. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

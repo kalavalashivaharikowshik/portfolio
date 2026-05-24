@@ -1,0 +1,65 @@
+/* ==========================================================
+   CSS RESET
+   Purpose: Remove inconsistent default styles across browsers
+   so we start from a clean, predictable slate.
+   ========================================================== */
+
+/* Use border-box on everything — makes width/height calculations sane */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make HTML and body fill the viewport, remove default scroll behavior */
+html {
+    scroll-behavior: smooth;       /* smooth scrolling when clicking nav links */
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Remove default list styling */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default link styling — we'll style links ourselves */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Make images responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Buttons should inherit font, not have ugly default styling */
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Make headings inherit weight — we'll set them ourselves */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+/* Form elements should inherit font */
+input, textarea, select {
+    font: inherit;
+}
