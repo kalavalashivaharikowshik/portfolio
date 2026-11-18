@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/features.css">
 </head>
 
 <body data-page="projects">
@@ -72,11 +73,22 @@
             <p class="page-subtitle">A selection of things I've built. Each one taught me something new.</p>
         </section>
 
+        <!-- Project filters -->
+        <div class="project-filters" role="group" aria-label="Filter projects">
+            <button class="filter-btn active" data-pfilter="all">All</button>
+            <button class="filter-btn" data-pfilter="fullstack">Full-Stack</button>
+            <button class="filter-btn" data-pfilter="healthcare">HealthTech</button>
+            <button class="filter-btn" data-pfilter="agritech">AgriTech</button>
+            <button class="filter-btn" data-pfilter="cv">Computer Vision</button>
+            <button class="filter-btn" data-pfilter="nlp">NLP</button>
+            <button class="filter-btn" data-pfilter="xai">Explainable AI</button>
+        </div>
+
         <section class="projects">
             <div class="projects-grid">
 
                 <!-- YieldSense AI (newest, placed first) -->
-                <article class="project-card">
+                <article class="project-card" data-tags="fullstack agritech ml">
                     <div class="project-carousel" data-carousel>
                         <div class="carousel-track">
                             <div class="carousel-slide active">
@@ -112,7 +124,7 @@
                 </article>
 
                 <!-- PharmaGuard AI -->
-                <article class="project-card">
+                <article class="project-card" data-tags="fullstack healthcare agentic">
                     <div class="project-carousel" data-carousel>
                         <div class="carousel-track">
                             <div class="carousel-slide active">
@@ -148,7 +160,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-tags="healthcare cv xai">
                     <div class="project-carousel" data-carousel>
                         <div class="carousel-track">
                             <div class="carousel-slide active">
@@ -203,7 +215,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-tags="healthcare nlp xai">
                     <div class="project-carousel" data-carousel>
                         <div class="carousel-track">
                             <div class="carousel-slide active">
@@ -250,7 +262,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-tags="agritech cv mlops">
                     <div class="project-carousel" data-carousel>
                         <div class="carousel-track">
                             <div class="carousel-slide active">
@@ -304,5 +316,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/features.js"></script>
 </body>
 </html>
