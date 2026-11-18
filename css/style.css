@@ -1,7 +1,7 @@
 /* ==========================================================
    GOOGLE FONTS
    ========================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Fonts are loaded via <link> tags in each page's <head> */
 
 
 /* ==========================================================
@@ -99,6 +99,14 @@ body {
     transition: background-color var(--transition), color var(--transition);
     overflow-x: hidden;
 }
+
+/* Stop decorative blobs from causing sideways scrolling on phones */
+html,
+body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
 
 h1 {
     font-size: clamp(2.25rem, 5.5vw, 4rem);
@@ -286,7 +294,7 @@ body.light-mode .theme-toggle .icon-sun {
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
     position: relative;
-    overflow: hidden;
+    overflow: visible; /* blobs fade out softly; html/body clip sideways overflow */
 }
 
 /* Gradient blobs in background */
@@ -982,6 +990,19 @@ body.light-mode .hero-grid {
     transform: translateY(0) rotate(0);
 }
 
+/* Gradient words are revealed as a whole word, because splitting them
+   into letters breaks the gradient (background-clip: text) effect */
+.gradient-text.reveal-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.gradient-text.reveal-text.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* ==========================================================
    22. MARQUEE / TECH STRIP
@@ -1129,7 +1150,7 @@ body.light-mode .hero-grid {
     margin-bottom: var(--space-sm);
     font-size: 1.05rem;
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
 }
 
 .about-cta {

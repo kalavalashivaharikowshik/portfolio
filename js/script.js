@@ -310,6 +310,8 @@ document.addEventListener('DOMContentLoaded', () => {
        ====================================================== */
 
     function splitTextIntoChars(element) {
+        // Keep gradient words whole so the gradient stays visible
+        if (element.classList.contains('gradient-text')) return;
         const text = element.textContent;
         element.textContent = '';
         text.split('').forEach((char, i) => {
